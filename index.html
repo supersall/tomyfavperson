@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Happy anniversary my darling ❤️</strong>
+                        <p>
+                         
+                            Callaa... We're such a cute couple, don't you think? I love how we understand each other and support each other to be our best selves. On our anniversary, I just want to say how grateful I am to have you in my life.
+
+                            Looking forward to spending another year together, you're stuck with me and I couldn't be happier about it! 🥹❤️ 
+                        ....................I LOVE .YOU CALLAA..................
+                        ............................❤️❤️❤️❤️.......................
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
